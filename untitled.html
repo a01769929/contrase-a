@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Formulario de acceso</title>
+	<meta charset="utf-8">
+	<script src="p_contra.js"></script>
+</head>
+<body>
+	<h1>Formulario de acceso</h1>
+	<form name="f_contra" method="post">
+		<label for="c_cta">Cuenta:</label>
+		<input type="text" id="c_cta" name="c_cta" placeholder="Introduce tu cuenta" required>
+		<br>
+		<label for="c_pass">Contraseña:</label>
+		<input type="password" id="c_pass" name="c_pass" placeholder="Introduce tu contraseña" required>
+		<br>
+		<label for="intentos">Intentos:</label>
+		<input type="text" id="intentos" name="intentos" value="0" readonly>
+		<br>
+		<input type="button" value="Mostrar contraseña" onclick="mostrar()">
+		<input type="button" value="Ocultar contraseña" onclick="ocultar()">
+		<input type="button" value="Enviar" onclick="enviar()">
+	</form>
+</body>
+</html>
